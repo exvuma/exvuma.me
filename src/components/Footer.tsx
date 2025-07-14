@@ -107,7 +107,7 @@ const victoria = {
                                 variant="ghost"
                                 size="sm"
                                 className="w-full justify-start text-gray-300 hover:text-white hover:bg-gray-800"
-                                onClick={() => window.open('https://linkedin.com/in/victoriafawcett', '_blank')}
+                                onClick={() => window.open('https://linkedin.com/in/exvuma', '_blank')}
                             >
                                 <Linkedin className="w-4 h-4 mr-2" />
                                 LinkedIn
