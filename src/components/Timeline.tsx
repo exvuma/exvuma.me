@@ -19,7 +19,7 @@ const Timeline = () => {
       type: "education",
       description: "Specialized in Computer Science within the Electrical Engineering program, complemented by a Tech Breadth in Business Management to establish a strong foundation in both technical and business domains.",
       skills: ["Electrical Engineering", "Computer Science", "Business Management", "Technical Foundation"],
-      icon: "GraduationCap",
+      icon: GraduationCap,
       achievement: "Graduated with a unique blend of deep technical expertise and strategic business acumen."
     },
     {
@@ -30,7 +30,7 @@ const Timeline = () => {
       type: "engineering",
       description: "Pioneered support processes for a 24/7 global team, managed on-call incident response, and led the development of internal tools to boost team efficiency.",
       skills: ["Incident Response", "Process Optimization", "Internal Tooling", "SLA Management"],
-      icon: "Code",
+      icon: Code,
       achievement: "Increased automated ticket responses by 200/week and improved agent resolve rate by 2 minutes/ticket."
     },
     {
@@ -41,18 +41,18 @@ const Timeline = () => {
       type: "engineering",
       description: "Drove the design and development of the CLI, UI, and backend for Cloudflare Workers (now Pages), significantly enhancing the developer experience.",
       skills: ["Full Stack Development", "Product Engineering", "Developer Experience", "User Testing"],
-      icon: "Code",
+      icon: Code,
       achievement: "Built and launched Cloudflare Zoneless (now Pages), a key component of the developer platform."
     },
     {
       id: 4,
-      year: "2020-2022",
+      year: "2020",
       role: "Founding Product Manager",
       company: "Coder",
       type: "transition",
       description: "Transitioned to product management, defining Coder's inaugural product roadmap and spearheading the strategy for penetrating the enterprise market.",
       skills: ["Product Strategy", "Roadmap Development", "Enterprise GTM", "FOSS to Enterprise"],
-      icon: "ArrowRight",
+      icon: ArrowRight,
       achievement: "Crafted and delivered the first 3-month roadmap and a comprehensive enterprise strategy."
     },
     {
@@ -63,7 +63,7 @@ const Timeline = () => {
       type: "product",
       description: "Led initiatives to unify GitHub's internal developer experience with GitHub Enterprise Server (GHES), defining the roadmap for Dependabot and internal testing.",
       skills: ["Developer Experience", "Enterprise Solutions", "Feature Prioritization", "Roadmap Definition"],
-      icon: "User",
+      icon: User,
       achievement: "Acquired 60 enterprise customers by launching Dependabot updates on GHES."
     },
     {
@@ -74,18 +74,18 @@ const Timeline = () => {
       type: "product",
       description: "Shaped the long and short-term product strategy for incident management, aligning with marketing for go-to-market execution and sales enablement.",
       skills: ["Product Strategy", "Incident Management", "Go-to-Market Strategy", "Sales Enablement"],
-      icon: "User",
+      icon: User,
       achievement: "Defined and executed a comprehensive incident management product strategy."
     },
     {
       id: 7,
-      year: "2023",
+      year: "2023-2024",
       role: "Founding PM - Roamly",
       company: "Outdoorsy",
       type: "product",
       description: "As the Founding Product Manager for Roamly, I defined and launched new insurance products, working directly with founders on the vision and strategy to secure investor funding.",
       skills: ["Product Innovation", "Insurtech", "Founder Collaboration", "Investment Strategy"],
-      icon: "Briefcase",
+      icon: Briefcase,
       achievement: "Successfully launched 3 new insurance products and onboarded over 200 users to Roamly Care."
     },
     {
@@ -96,7 +96,7 @@ const Timeline = () => {
       type: "product",
       description: "Leading AI/ML product initiatives, including a new ranking model that significantly boosts conversion rates and revenue through data-driven enhancements.",
       skills: ["AI/ML Product Strategy", "Machine Learning Models", "Revenue Growth", "Data-Driven Decisions"],
-      icon: "User",
+      icon: User,
       achievement: "Drove $1.2M-$3M in projected annualized revenue by increasing booking sealed CVR by 5%."
     }
   ];
