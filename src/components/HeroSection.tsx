@@ -68,18 +68,18 @@ const HeroSection = () => {
                   From Code to Product
                 </p>
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-gray-200">
-                  Transforming
+                  Building
                   <br />
-                  <span className="gradient-text">Ideas</span> into
+                  <span className="gradient-text">Products</span> that
                   <br />
-                  <span className="gradient-text">Impact</span>
+                  <span className="gradient-text">Move Mountains</span>
                 </h1>
               </div>
             </AnimatedSection>
 
             <AnimatedSection animation="fade-up" delay={200}>
               <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-                I combine deep technical expertise with a passion for user-centered design to ship products that solve critical problems and create devoted customers.
+                My journey from deep-tech engineering at Cloudflare and GitHub to launching AI-powered marketplaces at Outdoorsy is driven by a love for solving complex puzzles. I'm an engineer-turned-PM and mom who brought my passion for RVing to my work, building products as reliable as the internet and as delightful as a weekend on the open road.
               </p>
             </AnimatedSection>
 
