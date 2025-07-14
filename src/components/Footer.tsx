@@ -113,22 +113,9 @@ const victoria = {
                                 LinkedIn
                             </Button>
 
-                            <Button
-                                variant="ghost"
-                                size="sm"
-                                className="w-full justify-start text-gray-300 hover:text-white hover:bg-gray-800"
-                                onClick={() => window.open('mailto:hello@exvuma.me')}
-                            >
-                                <Mail className="w-4 h-4 mr-2" />
-                                hello@exvuma.me
-                            </Button>
+
                         </div>
 
-                        <div className="pt-4 border-t border-gray-700">
-                            <p className="text-xs text-gray-500">
-                                Made with <Heart className="inline w-3 h-3 text-red-400" /> and lots of ☕
-                            </p>
-                        </div>
                     </motion.div>
                 </div>
 
