@@ -124,6 +124,22 @@ const HeroSection = () => {
 
           {/* Enhanced Profile & Role Display */}
           <AnimatedSection animation="scale" delay={300} className="relative">
+            {/* Let's Talk CTA above profile */}
+            <div className="mb-8 text-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white border-0 pulse-glow magnetic-effect shadow-lg"
+                onClick={() => {
+                  const element = document.getElementById('contact');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                Let's Talk ✨
+              </Button>
+            </div>
+
             <div className="relative w-full h-96 flex items-center justify-center">
               {/* Background Code Pattern with shimmer */}
               <div className="absolute inset-0 code-pattern opacity-10 rounded-2xl shimmer"></div>
