@@ -1,6 +1,15 @@
 import { BlogPost } from '../types/blog';
+import RVPriceTransparencyPost from './posts/rv-price-transparency-2024';
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 'rv-price-transparency-2024',
+    title: 'Making RV Trip Planning Easier: Building True Price Transparency for Renters',
+    date: 'December 2024',
+    excerpt: 'A deep dive into improving price transparency across Outdoorsy\'s RV rental platform, from technical complexity to user-centered design and measurable business impact.',
+    readTime: '12 min read',
+    content: <RVPriceTransparencyPost />
+  },
   {
     id: '06_09_2022',
     title: 'Dependabot updates hit GA in GHES',
