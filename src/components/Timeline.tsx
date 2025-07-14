@@ -10,7 +10,6 @@ const Timeline = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
   const observerRef = useRef<IntersectionObserver | null>(null);
   const { ref: timelineRef, visibleItems: staggeredItems } = useStaggeredAnimation(8, 200);
-
   const timelineData = [
     {
       id: 1,
@@ -18,10 +17,10 @@ const Timeline = () => {
       role: "Bachelor of Science - Electrical Engineering",
       company: "UCLA",
       type: "education",
-      description: "Computer Science Focus with Business Management Tech Breadth. Built the foundation for both technical expertise and business acumen.",
+      description: "Specialized in Computer Science within the Electrical Engineering program, complemented by a Tech Breadth in Business Management to establish a strong foundation in both technical and business domains.",
       skills: ["Electrical Engineering", "Computer Science", "Business Management", "Technical Foundation"],
-      icon: GraduationCap,
-      achievement: "Graduated with technical and business management expertise"
+      icon: "GraduationCap",
+      achievement: "Graduated with a unique blend of deep technical expertise and strategic business acumen."
     },
     {
       id: 2,
@@ -29,10 +28,10 @@ const Timeline = () => {
       role: "Senior Support Engineer",
       company: "Cloudflare",
       type: "engineering",
-      description: "Started the journey in tech, working on-call to react to incidents and outages while forming processes for the 24/7 global team.",
-      skills: ["Incident Management", "Process Development", "24/7 Operations", "Internal Tools"],
-      icon: Code,
-      achievement: "Increased automatic text replies by 200 tickets/week"
+      description: "Pioneered support processes for a 24/7 global team, managed on-call incident response, and led the development of internal tools to boost team efficiency.",
+      skills: ["Incident Response", "Process Optimization", "Internal Tooling", "SLA Management"],
+      icon: "Code",
+      achievement: "Increased automated ticket responses by 200/week and improved agent resolve rate by 2 minutes/ticket."
     },
     {
       id: 3,
@@ -40,10 +39,10 @@ const Timeline = () => {
       role: "Full Stack Product Engineer",
       company: "Cloudflare",
       type: "engineering",
-      description: "Evolved into product engineering, collaborating on design and development of CLI, UI, and backend for Cloudflare Workers (now Pages).",
-      skills: ["Full Stack Development", "Product Engineering", "User Testing", "Developer Experience"],
-      icon: Code,
-      achievement: "Built Cloudflare Zoneless (now Pages) Workers"
+      description: "Drove the design and development of the CLI, UI, and backend for Cloudflare Workers (now Pages), significantly enhancing the developer experience.",
+      skills: ["Full Stack Development", "Product Engineering", "Developer Experience", "User Testing"],
+      icon: "Code",
+      achievement: "Built and launched Cloudflare Zoneless (now Pages), a key component of the developer platform."
     },
     {
       id: 4,
@@ -51,10 +50,10 @@ const Timeline = () => {
       role: "Founding Product Manager",
       company: "Coder",
       type: "transition",
-      description: "Made the leap into product management, forming Coder's first roadmap and strategy for entering the enterprise market.",
-      skills: ["Product Strategy", "Roadmap Development", "Enterprise Market", "FOSS to Enterprise"],
-      icon: ArrowRight,
-      achievement: "Delivered first 3-month roadmap and enterprise strategy"
+      description: "Transitioned to product management, defining Coder's inaugural product roadmap and spearheading the strategy for penetrating the enterprise market.",
+      skills: ["Product Strategy", "Roadmap Development", "Enterprise GTM", "FOSS to Enterprise"],
+      icon: "ArrowRight",
+      achievement: "Crafted and delivered the first 3-month roadmap and a comprehensive enterprise strategy."
     },
     {
       id: 5,
@@ -62,10 +61,10 @@ const Timeline = () => {
       role: "Product Manager",
       company: "GitHub",
       type: "product",
-      description: "Led initiatives to unify GitHub's internal developer experience with GHAE, defining roadmaps for Dependabot and testing on GHES.",
-      skills: ["Developer Experience", "Enterprise Solutions", "Feature Prioritization", "Internal Tools"],
-      icon: User,
-      achievement: "Unified GitHub's internal developer experience"
+      description: "Led initiatives to unify GitHub's internal developer experience with GitHub Enterprise Server (GHES), defining the roadmap for Dependabot and internal testing.",
+      skills: ["Developer Experience", "Enterprise Solutions", "Feature Prioritization", "Roadmap Definition"],
+      icon: "User",
+      achievement: "Acquired 60 enterprise customers by launching Dependabot updates on GHES."
     },
     {
       id: 6,
@@ -73,34 +72,35 @@ const Timeline = () => {
       role: "Senior Product Manager",
       company: "FireHydrant",
       type: "product",
-      description: "Shaped long and short-term product strategy for incident management, working closely with marketing on GTM and sales enablement.",
-      skills: ["Product Strategy", "Incident Management", "Go-to-Market", "Sales Enablement"],
-      icon: User,
-      achievement: "Defined comprehensive incident management strategy"
+      description: "Shaped the long and short-term product strategy for incident management, aligning with marketing for go-to-market execution and sales enablement.",
+      skills: ["Product Strategy", "Incident Management", "Go-to-Market Strategy", "Sales Enablement"],
+      icon: "User",
+      achievement: "Defined and executed a comprehensive incident management product strategy."
     },
     {
       id: 7,
-      year: "2023-Present",
-      role: "Senior Product Manager",
-      company: "Outdoorsy",
-      type: "product",
-      description: "Leading AI/ML initiatives and product development, driving significant revenue growth through innovative features and data-driven decisions.",
-      skills: ["AI/ML Strategy", "Machine Learning", "Revenue Growth", "Data-Driven Product"],
-      icon: User,
-      achievement: "Delivered $5M+ annualized revenue through ML ranking model"
-    },
-    {
-      id: 8,
-      year: "Current",
+      year: "2023",
       role: "Founding PM - Roamly",
       company: "Outdoorsy",
       type: "product",
-      description: "Defining and launching insurance products as Founding Product Manager, collaborating with founders on strategy and vision for investor funding.",
-      skills: ["Product Innovation", "Insurance Tech", "Founder Collaboration", "Investment Strategy"],
-      icon: Briefcase,
-      achievement: "Launched 3 insurance products & 200+ Roamly Care users"
+      description: "As the Founding Product Manager for Roamly, I defined and launched new insurance products, working directly with founders on the vision and strategy to secure investor funding.",
+      skills: ["Product Innovation", "Insurtech", "Founder Collaboration", "Investment Strategy"],
+      icon: "Briefcase",
+      achievement: "Successfully launched 3 new insurance products and onboarded over 200 users to Roamly Care."
+    },
+    {
+      id: 8,
+      year: "2024-Present",
+      role: "Senior Product Manager",
+      company: "Outdoorsy",
+      type: "product",
+      description: "Leading AI/ML product initiatives, including a new ranking model that significantly boosts conversion rates and revenue through data-driven enhancements.",
+      skills: ["AI/ML Product Strategy", "Machine Learning Models", "Revenue Growth", "Data-Driven Decisions"],
+      icon: "User",
+      achievement: "Drove $1.2M-$3M in projected annualized revenue by increasing booking sealed CVR by 5%."
     }
   ];
+
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -148,7 +148,7 @@ const Timeline = () => {
             My <span className="gradient-text reveal-text">Journey</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            From electrical engineering to product leadership - a timeline of growth, learning, 
+            From electrical engineering to product leadership - a timeline of growth, learning,
             and the evolution from engineer to AI-driven product strategist.
           </p>
         </AnimatedSection>
@@ -171,7 +171,7 @@ const Timeline = () => {
                   className={`timeline-item relative flex ${
                     // Mobile: always left-aligned, Desktop: alternating
                     'md:' + (isLeft ? 'justify-end' : 'justify-start')
-                  }`}
+                    }`}
                 >
                   {/* Mobile-optimized Timeline Node */}
                   <div className={`absolute left-3 md:left-1/2 md:transform md:-translate-x-1/2 w-6 h-6 md:w-16 md:h-16 rounded-full bg-background border-2 md:border-4 border-primary flex items-center justify-center z-10 transition-all duration-1000 ${isStaggerVisible ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}>
@@ -182,10 +182,9 @@ const Timeline = () => {
 
                   {/* Mobile-optimized Content Card */}
                   <div className={`w-full pl-12 md:w-5/12 ${isLeft ? 'md:pr-8' : 'md:pl-8'}`}>
-                    <Card className={`transition-all duration-1000 card-3d narrative-indicator ${
-                      isVisible ? 'opacity-100 translate-y-0 active' : 'opacity-0 translate-y-8'
-                    } ${isLeft ? 'md:text-right' : 'md:text-left'}`}
-                    style={{ transitionDelay: `${index * 200}ms` }}>
+                    <Card className={`transition-all duration-1000 card-3d narrative-indicator ${isVisible ? 'opacity-100 translate-y-0 active' : 'opacity-0 translate-y-8'
+                      } ${isLeft ? 'md:text-right' : 'md:text-left'}`}
+                      style={{ transitionDelay: `${index * 200}ms` }}>
                       <CardContent className="p-4 md:p-6">
                         <div className={`flex flex-col md:flex-row items-start md:items-center ${isLeft ? 'md:justify-end' : 'md:justify-start'} mb-3 md:mb-4 gap-2`}>
                           <Badge variant="outline" className="text-xs magnetic-effect">
@@ -196,7 +195,7 @@ const Timeline = () => {
 
                         <h3 className="text-lg md:text-xl font-bold mb-1">{item.role}</h3>
                         <p className="text-primary font-medium mb-2 md:mb-3">{item.company}</p>
-                        
+
                         {/* Condensed description for mobile */}
                         <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-3 md:mb-4 md:block">
                           {item.description}
@@ -210,11 +209,11 @@ const Timeline = () => {
                         {/* Condensed skills for mobile */}
                         <div className={`flex flex-wrap gap-1 md:gap-2 ${isLeft ? 'md:justify-end' : 'md:justify-start'}`}>
                           {item.skills.slice(0, 3).map((skill, skillIndex) => (
-                            <Badge 
-                              key={skill} 
-                              variant="secondary" 
+                            <Badge
+                              key={skill}
+                              variant="secondary"
                               className="text-xs font-mono magnetic-effect"
-                              style={{ 
+                              style={{
                                 animationDelay: `${(index * 200) + (skillIndex * 50)}ms`,
                                 opacity: isVisible ? 1 : 0,
                                 transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
@@ -245,9 +244,9 @@ const Timeline = () => {
             <CardContent className="p-6 md:p-8">
               <h3 className="text-xl md:text-2xl font-bold mb-4 gradient-text reveal-text">The Transformation</h3>
               <p className="text-sm md:text-lg leading-relaxed text-muted-foreground">
-                Victoria's unique journey from electrical engineering through full-stack development to strategic 
-                product management showcases a rare combination of technical depth and business acumen. Her experience 
-                spans from incident management at scale to AI/ML product innovation, making her uniquely positioned 
+                Victoria's unique journey from electrical engineering through full-stack development to strategic
+                product management showcases a rare combination of technical depth and business acumen. Her experience
+                spans from incident management at scale to AI/ML product innovation, making her uniquely positioned
                 to build products that are both technically sophisticated and commercially successful.
               </p>
               <div className="mt-4 md:mt-6 flex flex-wrap justify-center gap-2 md:gap-3">
