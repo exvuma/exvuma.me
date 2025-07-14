@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import Timeline from '@/components/Timeline';
 import BlogSection from '@/components/BlogSection';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       {/* <ProjectShowcase /> */}
       <Timeline />
       <Contact />
+      <Footer />
     </div>
   );
 };
