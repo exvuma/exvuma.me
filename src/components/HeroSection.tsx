@@ -85,10 +85,29 @@ const HeroSection = () => {
 
             <AnimatedSection animation="slide-right" delay={400}>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="gradient-primary text-white border-0 pulse-glow magnetic-effect">
+                <Button
+                  size="lg"
+                  className="gradient-primary text-white border-0 pulse-glow magnetic-effect"
+                  onClick={() => {
+                    const element = document.getElementById('blog');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
                   View My Work
                 </Button>
-                <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white magnetic-effect">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary hover:text-white magnetic-effect"
+                  onClick={() => {
+                    const element = document.getElementById('timeline');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
                   Read My Story
                 </Button>
               </div>
