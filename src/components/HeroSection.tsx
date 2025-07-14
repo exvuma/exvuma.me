@@ -68,11 +68,11 @@ const HeroSection = () => {
                   From Code to Product
                 </p>
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-gray-200">
-                  Building
+                  The Full Stack
                   <br />
-                  <span className="gradient-text">Products</span> that
+                  <span className="gradient-text">Product</span>
                   <br />
-                  <span className="gradient-text">Move Mountains</span>
+                  <span className="gradient-text">Leader</span>
                 </h1>
               </div>
             </AnimatedSection>
