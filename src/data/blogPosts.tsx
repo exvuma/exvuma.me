@@ -6,7 +6,7 @@ export const blogPosts: BlogPost[] = [
     id: 'rv-price-transparency-2024',
     title: 'Beyond Compliance: A PM\'s Journey Building Price Transparency Through Experimentation',
     subtitle: 'How A/B Testing and User Feedback Transformed RV Booking Conversions by 5% and Increased Annual Revenue by Millions',
-    date: 'December 2024',
+    date: 'July 14, 2025',
     excerpt: 'A deep dive into improving price transparency across Outdoorsy\'s RV rental platform, from technical complexity to user-centered design and measurable business impact.',
     readTime: '12 min read',
     isExternal: true,
