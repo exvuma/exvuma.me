@@ -2,6 +2,7 @@
 export interface BlogPost {
   id: string;
   title: string;
+  subtitle?: string;
   date: string;
   excerpt: string;
   content: JSX.Element;
