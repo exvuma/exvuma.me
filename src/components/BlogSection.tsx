@@ -32,7 +32,7 @@ const BlogSection = () => {
 
   const renderPostCard = (post: BlogPost) => (
     <motion.article
-      className="group bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-500 h-full flex flex-col"
+      className="group bg-card backdrop-blur-sm border border-border rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-500 h-full flex flex-col"
       whileHover={{
         y: -10,
         scale: 1.02,
@@ -41,7 +41,7 @@ const BlogSection = () => {
     >
       <div className="p-8 flex-grow flex flex-col">
         <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-4 text-sm text-gray-400">
+          <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               {post.date}
@@ -54,16 +54,16 @@ const BlogSection = () => {
           {post.isExternal && (
             <div className="flex items-center gap-2">
               {post.source && getSourceLogo(post.source)}
-              <ExternalLink className="w-4 h-4 text-gray-400" />
+              <ExternalLink className="w-4 h-4 text-muted-foreground" />
             </div>
           )}
         </div>
 
-        <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors duration-300 flex-grow">
+        <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-blue-400 transition-colors duration-300 flex-grow">
           {post.title}
         </h3>
 
-        <p className="text-gray-400 mb-6 line-clamp-3">
+        <p className="text-muted-foreground mb-6 line-clamp-3">
           {post.excerpt}
         </p>
 
@@ -76,7 +76,7 @@ const BlogSection = () => {
   );
 
   return (
-    <section id="blog" className="py-32 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section id="blog" className="py-32 px-6 bg-gradient-to-b from-background via-muted to-card">
       <div className="container mx-auto max-w-7xl">
         <AnimatedSection>
           <div className="text-center mb-20">
@@ -89,7 +89,7 @@ const BlogSection = () => {
               Technical Insights
             </motion.h2>
             <motion.p
-              className="text-xl text-gray-400 max-w-3xl mx-auto"
+              className="text-xl text-muted-foreground max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}

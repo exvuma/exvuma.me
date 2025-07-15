@@ -141,7 +141,7 @@ const Timeline = () => {
   };
 
   return (
-    <section id="timeline" className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-b from-black via-gray-900 to-black">
+    <section id="timeline" className="py-16 md:py-32 px-4 md:px-6 bg-gradient-to-b from-background via-muted to-card">
       <div className="container mx-auto px-4 md:px-6">
         <AnimatedSection animation="fade-up" className="text-center mb-8 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

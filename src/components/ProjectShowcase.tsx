@@ -117,7 +117,7 @@ const ProjectShowcase = () => {
 
   const renderProjectLinks = (links: any) => {
     const linkButtons = [];
-    
+
     if (links.github) {
       linkButtons.push(
         <Button key="github" size="sm" variant="outline">
@@ -126,7 +126,7 @@ const ProjectShowcase = () => {
         </Button>
       );
     }
-    
+
     if (links.video) {
       linkButtons.push(
         <Button key="video" size="sm" variant="outline">
@@ -135,7 +135,7 @@ const ProjectShowcase = () => {
         </Button>
       );
     }
-    
+
     if (links.chrome) {
       linkButtons.push(
         <Button key="chrome" size="sm" variant="outline">
@@ -144,7 +144,7 @@ const ProjectShowcase = () => {
         </Button>
       );
     }
-    
+
     if (links.website) {
       linkButtons.push(
         <Button key="website" size="sm" variant="outline">
@@ -153,7 +153,7 @@ const ProjectShowcase = () => {
         </Button>
       );
     }
-    
+
     if (linkButtons.length === 0) {
       linkButtons.push(
         <Button key="details" size="sm" variant="outline">
@@ -162,7 +162,7 @@ const ProjectShowcase = () => {
         </Button>
       );
     }
-    
+
     return linkButtons;
   };
 
@@ -174,7 +174,7 @@ const ProjectShowcase = () => {
             Product <span className="gradient-text reveal-text">Portfolio</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A collection of products I've built and managed, from concept to scale, 
+            A collection of products I've built and managed, from concept to scale,
             demonstrating the intersection of technical expertise and product vision.
           </p>
         </AnimatedSection>
@@ -187,19 +187,18 @@ const ProjectShowcase = () => {
                 {'// Featured Projects'}
               </h3>
             </AnimatedSection>
-            
+
             {projects.map((project, index) => (
               <div
                 key={project.id}
                 className={`stagger-fade ${visibleItems.has(index) ? 'visible' : ''}`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                <Card 
-                  className={`cursor-pointer transition-all duration-500 hover:scale-105 card-3d magnetic-effect ${
-                    activeProject === index 
-                      ? 'ring-2 ring-primary gradient-primary text-white transform scale-105' 
+                <Card
+                  className={`cursor-pointer transition-all duration-500 hover:scale-105 card-3d magnetic-effect ${activeProject === index
+                      ? 'ring-2 ring-primary gradient-primary text-white transform scale-105'
                       : 'hover:border-primary/50'
-                  }`}
+                    }`}
                   onClick={() => setActiveProject(index)}
                 >
                   <CardContent className="p-4">
@@ -235,7 +234,7 @@ const ProjectShowcase = () => {
                     </div>
                   </div>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-6">
                   {/* Project Image with enhanced visual effects */}
                   <div className="aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center relative overflow-hidden group">
@@ -274,9 +273,9 @@ const ProjectShowcase = () => {
                       <h4 className="font-semibold mb-3">Technologies Used</h4>
                       <div className="flex flex-wrap gap-2">
                         {currentProject.technologies.map((tech, index) => (
-                          <Badge 
-                            key={tech} 
-                            variant="secondary" 
+                          <Badge
+                            key={tech}
+                            variant="secondary"
                             className="font-mono magnetic-effect"
                             style={{ animationDelay: `${index * 50}ms` }}
                           >

@@ -17,7 +17,7 @@ const victoria = {
 };`;
 
     return (
-        <footer className="relative bg-gradient-to-br from-gray-900 via-black to-gray-900 border-t border-gray-800 overflow-hidden">
+        <footer className="relative bg-gradient-to-br from-background via-muted to-card border-t border-border overflow-hidden">
             {/* Animated background elements */}
             <div className="absolute inset-0">
                 <div className="absolute top-10 left-10 w-2 h-2 bg-primary/30 rounded-full animate-pulse"></div>
@@ -38,21 +38,21 @@ const victoria = {
                     >
                         <div className="flex items-center space-x-2">
                             <div className="w-8 h-8 bg-gradient-to-r from-primary to-purple-500 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-bold text-sm">VF</span>
+                                <span className="text-foreground font-bold text-sm">VF</span>
                             </div>
-                            <h3 className="text-xl font-bold text-white">Victoria Fawcett</h3>
+                            <h3 className="text-xl font-bold text-foreground">Victoria Fawcett</h3>
                         </div>
 
-                        <p className="text-gray-300 leading-relaxed">
+                        <p className="text-muted-foreground leading-relaxed">
                             From <Code className="inline w-4 h-4 text-primary" /> to <Zap className="inline w-4 h-4 text-yellow-400" />
                             — building products with heart and hustle.
                             <br />
-                            <span className="text-sm text-gray-400">
+                            <span className="text-sm text-muted-foreground">
                                 Powered by coffee and curiosity ☕✨
                             </span>
                         </p>
 
-                        <div className="flex items-center space-x-2 text-sm text-gray-400">
+                        <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                             <Coffee className="w-4 h-4" />
                             <span>Coffee count: ∞</span>
                             <Heart className="w-4 h-4 text-red-400 ml-4" />
@@ -67,18 +67,18 @@ const victoria = {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        <h4 className="text-lg font-semibold text-white flex items-center space-x-2">
+                        <h4 className="text-lg font-semibold text-foreground flex items-center space-x-2">
                             <Sparkles className="w-5 h-5 text-yellow-400" />
                             <span>Current Status</span>
                         </h4>
 
-                        <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
+                        <div className="bg-card rounded-lg p-4 border border-border">
                             <pre className="text-xs text-green-400 font-mono overflow-x-auto">
                                 <code>{codeSnippet}</code>
                             </pre>
                         </div>
 
-                        <p className="text-sm text-gray-400">
+                        <p className="text-sm text-muted-foreground">
                             Always learning, always building, always vibing 🚀
                         </p>
                     </motion.div>
@@ -90,13 +90,13 @@ const victoria = {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <h4 className="text-lg font-semibold text-white">Let's Connect</h4>
+                        <h4 className="text-lg font-semibold text-foreground">Let's Connect</h4>
 
                         <div className="space-y-3">
                             <Button
                                 variant="ghost"
                                 size="sm"
-                                className="w-full justify-start text-gray-300 hover:text-white hover:bg-gray-800"
+                                className="w-full justify-start text-muted-foreground hover:text-foreground hover:bg-muted"
                                 onClick={() => window.open('https://github.com/exvuma', '_blank')}
                             >
                                 <Github className="w-4 h-4 mr-2" />
@@ -106,32 +106,29 @@ const victoria = {
                             <Button
                                 variant="ghost"
                                 size="sm"
-                                className="w-full justify-start text-gray-300 hover:text-white hover:bg-gray-800"
+                                className="w-full justify-start text-muted-foreground hover:text-foreground hover:bg-muted"
                                 onClick={() => window.open('https://linkedin.com/in/exvuma', '_blank')}
                             >
                                 <Linkedin className="w-4 h-4 mr-2" />
                                 LinkedIn
                             </Button>
-
-
                         </div>
-
                     </motion.div>
                 </div>
 
                 {/* Bottom Section */}
                 <motion.div
-                    className="mt-12 pt-8 border-t border-gray-800 text-center"
+                    className="mt-12 pt-8 border-t border-border text-center"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
                     <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
-                        <p className="text-sm text-gray-400">
+                        <p className="text-sm text-muted-foreground">
                             © {currentYear} Victoria Fawcett. All vibes reserved.
                         </p>
 
-                        <div className="flex items-center space-x-4 text-sm text-gray-400">
+                        <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                             <span className="flex items-center space-x-1">
                                 <span>Built with</span>
                                 <Code className="w-4 h-4 text-primary" />
@@ -146,7 +143,7 @@ const victoria = {
                         </div>
                     </div>
 
-                    <div className="mt-4 text-xs text-gray-500">
+                    <div className="mt-4 text-xs text-muted-foreground">
                         <p>
                             From engineer to PM, but still a developer at heart 💻 → 🎯
                         </p>

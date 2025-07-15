@@ -36,7 +36,7 @@ const HeroSection = () => {
   const CurrentIcon = roles[currentRole].icon;
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted to-card">
       {/* Enhanced Background Effects */}
       <div className="absolute inset-0 blueprint-grid opacity-30"></div>
 
@@ -67,7 +67,7 @@ const HeroSection = () => {
                 <p className="text-primary font-mono text-sm tracking-wide uppercase reveal-text">
                   From Code to Product
                 </p>
-                <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-gray-200">
+                <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-foreground">
                   The Full Stack
                   <br />
                   <span className="gradient-text">Product</span>
