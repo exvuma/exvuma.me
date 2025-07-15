@@ -2,7 +2,7 @@ import React from 'react';
 
 const RVPriceTransparencyPost = () => {
     return (
-        <div className="prose prose-lg max-w-none">
+        <div className="prose max-w-none blog-medium">
             <p>
                 As a Senior Product Manager at Outdoorsy, one of the most complex and rewarding challenges I've tackled recently was improving price transparency across our RV rental platform. This wasn't just a feature rollout; it was a cross-functional effort requiring stakeholder alignment, thoughtful experimentation, data-driven iteration, and technical creativity.
             </p>
